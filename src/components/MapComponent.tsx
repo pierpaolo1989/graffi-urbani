@@ -59,6 +59,12 @@ const MapComponent: React.FC<MapComponentProps> = ({ murals, sponsors, selectedM
         }),
       });
 
+      map.on("pointermove", (evt) => {
+        const hit = map.hasFeatureAtPixel(evt.pixel);
+        const target = map.getTargetElement();
+        target.style.cursor = hit ? "pointer" : "";
+      });
+
       const vectorLayer = new VectorLayer({
         source: vectorSourceRef.current,
       });
@@ -152,7 +158,7 @@ const MapComponent: React.FC<MapComponentProps> = ({ murals, sponsors, selectedM
         new Style({
           image: new Icon({
             src: "https://upload.wikimedia.org/wikipedia/commons/e/ec/RedDot.svg",
-            scale: 25,
+            scale: 2.5, // <--- prima era 25, ora è più proporzionato
           }),
         })
       );
