@@ -208,7 +208,6 @@ const MapComponent: React.FC<MapComponentProps> = ({ murals, sponsors, selectedM
           borderRadius: "4px",
           cursor: "pointer",
         }}
-
       >
         <FontAwesomeIcon icon={faLocationDot} style={{ "color": "#666666" }} />
       </button>
