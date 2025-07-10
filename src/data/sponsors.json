@@ -1,0 +1,4 @@
+[
+    { "id": 1, "name": "Sponsor A", "coords": [14.2500, 40.8500], "details": "Supporta il progetto dei murales." },
+    { "id": 2, "name": "Sponsor B", "coords": [14.2600, 40.8520], "details": "Promuove la cultura locale." }
+]

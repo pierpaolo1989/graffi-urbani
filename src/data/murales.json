@@ -1,0 +1,126 @@
+[
+  {
+    "id": 1,
+    "artist": "Jorit",
+    "name": "Murale di Maradona",
+    "coords": [14.2475, 40.8522],
+    "details": "Un omaggio al Pibe de Oro."
+  },
+  {
+    "id": 2,
+    "name": "Murale della Pace",
+    "coords": [14.262, 40.8493],
+    "details": "Un omaggio al Pibe de Oro."
+  },
+  {
+    "id": 3,
+    "artist": "Francisco Bosolotti",
+    "city": "Napoli, via Sanità",
+    "name": "La speranza nascosta",
+    "coords": [14.2358, 40.8556],
+    "details": "Un omaggio al Pibe de Oro."
+  },
+  {
+    "id": 4,
+    "city": "Napoli, Piazza Cardinale Sisto Riario Sforza",
+    "artist": "Roxy in the Box",
+    "name": "Mission Possible",
+    "coords": [14.2602591, 40.8519869],
+    "details": "Caravaggio è intento a leggere il New York Times mentre San Gennaro sfoglia Il Sole 24 Ore dove in prima pagina campeggia il celebre titolo “Fate Presto” chiedendo lavoro per tutti, cultura e turismo."
+  },
+  {
+    "id": 5,
+    "name": "San Gennaro",
+    "coords": [14.2625312, 40.850771],
+    "details": "Un omaggio al Santo Patrono della città di Napoli, in pieno centro storico."
+  },
+  {
+    "id": 6,
+    "name": "Zilda Sanità",
+    "coords": [14.2601802, 40.8520573],
+    "details": "Un omaggio al Pibe de Oro."
+  },
+  {
+    "id": 7,
+    "name": "Blu - Ex OPG",
+    "artist": "Blu",
+    "city": "Napoli, via Imbriani",
+    "coords": [14.2417611, 40.8537396],
+    "details": "Il murale raffigura un gigantesco omone verde e copre un lato dell’ex OPG, l’ospedale psichiatrico giudiziario di via Imbriani, nel cuore del centro storico."
+  },
+  {
+    "id": 8,
+    "name": "Murale di Troisi",
+    "artist": "Jorit",
+    "city": "San Giorgio a Cremano, Via Roberto Galdieri",
+    "coords": [14.3399685, 40.839877],
+    "details": "Un omaggio ad uno dei più grandi comici italiani."
+  },
+  {
+    "id": 9,
+    "name": "Murale di Fidel Castro",
+    "city": "Napoli, via Mezzocannone",
+    "artist": "Mono Gonzalez e Tono Cruz",
+    "coords": [14.2559494, 40.846871],
+    "details": "Il murales è dedicato all'ex leader cubano ed è stato realizzato sulla facciata del centro sociale Mezzocannone Occupato."
+  },
+  {
+    "id": 10,
+    "name": "Parco dei Murales",
+    "coords": [14.338304, 40.8605176],
+    "details": "Il Parco dei Murales è un programma di creatività urbana, tra riqualificazione artistica e rigenerazione sociale, condotto con la partecipazione della comunità residente."
+  },
+  {
+    "id": 11,
+    "name": "Sibilla Cumana",
+    "artist": "Jorit",
+    "city": "Bacoli, Via Gaetano De Rosa",
+    "coords": [14.0789871, 40.7966558],
+    "details": "Il murale ritrae il volto giovane della sibilla ed il suo riflesso nelle acque della Piscina Mirabilis, un’antica cisterna romana che si trova proprio nei pressi dell’opera di Jorit."
+  },
+  {
+    "id": 12,
+    "name": "Murale di Giancarlo Siani",
+    "coords": [14.2370208, 40.8505644],
+    "details": "Un omaggio al giornalista de Il Mattino ucciso in un agguato di camorra nel 1992."
+  },
+  {
+    "id": 13,
+    "artist": "Leticia Mandragora",
+    "city": "Gragnano, Via Quarantola, 170",
+    "name": "Murale di Sofia Loren",
+    "coords": [14.2530807, 40.6944349],
+    "details": "L'opera riporta una sua celebre frase sugli spaghetti, la pasta per eccellenza. Scritta non messa a caso visto che Gragnano è famosa per i suoi pastifici. Carina anche l'idea degli orecchini a forma di pasta."
+  },
+  {
+    "id": 14,
+    "name": "La madre",
+    "artist": "Jorit",
+    "details": "Ritratto di una madre africana, simbolo di forza e dignità.",
+    "city": "Quarto, Napoli",
+    "coords": [14.1456, 40.8732]
+  },
+  {
+    "id": 15,
+    "name": "La bambina con il palloncino",
+    "artist": "Sky in the Box",
+    "details": "Opera delicata che raffigura una bambina con un palloncino rosso a forma di cuore.",
+    "city": "Vomero, Napoli",
+    "coords": [14.2333, 40.8429]
+  },
+  {
+    "id": 16,
+    "city": "Scampia, Piazza Cardinale Sisto Riario Sforza",
+    "artist": "Jorit",
+    "name": "Pierpaolo Pasolini",
+    "coords": [14.2370723, 40.8944218],
+    "details": "Murale dedicato al poeta, scrittore e filosofo romano.  Dipinto sulla facciata di un palazzo all’uscita della stazione della metropolitana di Piscinola-Scampia, linea 1."
+  },
+  {
+    "id": 17,
+    "coords": [14.1786442,40.8981435],
+    "name": "Giancarlo Siani",
+    "city": "Marano di Napoli, Via Arturo Labriola, 7B",
+    "details": "Un omaggio al giornalista de Il Mattino ucciso in un agguato di camorra nel 1992."
+  }
+]
