@@ -12,7 +12,7 @@ export const artists: StreetArtist[] = [
   },
   {
     name: "Cyop&Kaf",
-    image: "https://www.napolike.it/wp-content/uploads/2015/03/cyopkaf.jpg",
+    image: "artist3.jpeg",
     bio: "Cyop&Kaf sono un duo artistico attivo nei Quartieri Spagnoli. Le loro opere, oltre 200 graffiti, raccontano la vita quotidiana e l’anima popolare di Napoli, trasformando i vicoli in una galleria d’arte a cielo aperto."
   },
   {
