@@ -17,7 +17,7 @@ export const artists: StreetArtist[] = [
   },
   {
     name: "Alice Pasquini",
-    image: "artist5.jpeg",
+    image: "artist3.jpeg",
     bio: "Nata a Roma nel 1980, Alice Pasquini è una delle più importanti street artist italiane. Le sue opere, presenti in oltre 100 città nel mondo, raccontano emozioni, relazioni umane e la forza femminile. Ha fondato il CVTà Street Fest e ha collaborato con brand come Nike e Canon."
   },
   {
@@ -52,7 +52,7 @@ export const artists: StreetArtist[] = [
   },
   {
     name: "Raffo Art",
-    image: "https://www.napolike.it/wp-content/uploads/2021/03/skyinthebox.jpg",
+    image: "artist1.jpeg",
     bio: "Raffaele Liuzzi, in arte “Raffo”, è un famoso street artist napoletano, molto noto per i ritratti murali dipinti in onore a Bud Spencer, Maradona, Gigi Proietti, Armine Harutyunian (la modella di Gucci tanto criticata perché non rappresenterebbe i canoni di bellezza classici)."
   },
   {
