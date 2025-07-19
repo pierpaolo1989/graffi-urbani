@@ -15,7 +15,7 @@ const ArtistCard: React.FC<Props> = ({ artist }) => (
     boxShadow: "0 2px 8px rgba(0,0,0,0.1)"
   }}>
     <img src={artist.image} alt={artist.name} style={{ width: "100%", borderRadius: "8px" }} />
-    <h3>{artist.name}</h3>
+    <h3 className="mt-2">{artist.name}</h3>
     <p>{artist.bio}</p>
   </div>
 );
