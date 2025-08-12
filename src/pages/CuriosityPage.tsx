@@ -5,7 +5,7 @@ function CuriosityPage() {
         <div className="app flex flex-col min-h-screen">
             <Navbar />
             <div style={outerContainerStyle}>
-                <h1 style={{ fontSize: "2rem", marginBottom: "20px" }}>Curiosità sulla Street Art a Napoli</h1>
+                <h1 style={{ fontSize: "2rem", marginBottom: "20px" }}>Curiosità sulla Street Art</h1>
 
                 <div style={cardGridStyle}>
                     {cards.map((card, index) => (
@@ -21,7 +21,7 @@ function CuriosityPage() {
 }
 
 const outerContainerStyle = {
-    maxWidth: "960px", // circa 8-10 colonne su un layout a 12 colonne
+    maxWidth: "960px",
     margin: "0 auto",
     padding: "20px",
     marginTop: "20px"
@@ -69,17 +69,17 @@ const cards = [
         text: "Progetti come 'Street Art Napoli' hanno trasformato quartieri degradati in spazi vivi e colorati, coinvolgendo scuole, associazioni e cittadini."
     },
     {
-        title: "🏙️ Teorema delle finestre rotte",
-        text: "Progetti come 'Street Art Napoli' hanno trasformato quartieri degradati in spazi vivi e colorati, coinvolgendo scuole, associazioni e cittadini."
+        title: "🔍 Teorema delle finestre rotte e street art",
+        text: "Il teorema delle finestre rotte afferma che segni di degrado non curati incoraggiano ulteriore degrado. La street art, se inserita in progetti di riqualificazione, ribalta questo meccanismo: muri abbandonati diventano opere che stimolano cura, orgoglio e senso di comunità."
     },
     {
-        title: "🏙️ Diritti d'autore sulle opere di street art",
-        text: "Progetti come 'Street Art Napoli' hanno trasformato quartieri degradati in spazi vivi e colorati, coinvolgendo scuole, associazioni e cittadini."
+        title: "📜 Diritti d'autore sulla street art in Italia",
+        text: "In Italia, la street art è protetta dal diritto d’autore se presenta carattere creativo. L’artista mantiene i diritti morali e patrimoniali, anche se l’opera è su muro pubblico. Tuttavia, questioni legali possono sorgere se l’opera è non autorizzata o soggetta a rimozione."
     },
-     {
-        title: "🏙️ Diritti d'autore sulle opere di street art",
-        text: "Progetti come 'Street Art Napoli' hanno trasformato quartieri degradati in spazi vivi e colorati, coinvolgendo scuole, associazioni e cittadini."
-    },
+    {
+        title: "💡 Street art e tecnologia laser",
+        text: "Alcuni artisti sperimentano proiezioni e incisioni laser temporanee su edifici, creando opere visibili solo di notte o per eventi speciali. Questa tecnica riduce l’impatto fisico sulle superfici e apre nuove possibilità creative."
+    }
 ];
 
 export default CuriosityPage;
