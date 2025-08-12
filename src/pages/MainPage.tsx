@@ -73,13 +73,6 @@ const MainPage: React.FC = () => {
           onCenterMap={() => setSelectedMurale(null)}
         />
 
-        <button
-          onClick={() => setIsSidebarOpen(!isSidebarOpen)}
-          className="fixed top-4 left-4 z-50 bg-blue-500 text-white px-3 py-2 rounded md:hidden"
-        >
-          {isSidebarOpen ? "Chiudi" : "Menu"}
-        </button>
-
         <Sidebar
           murals={filteredMurals}
           onFilter={handleFilter}

@@ -52,7 +52,7 @@ export const artists: StreetArtist[] = [
   },
   {
     name: "Raffo Art",
-    image: "artist1.jpeg",
+    image: "artist.jpeg",
     bio: "Raffaele Liuzzi, in arte “Raffo”, è un famoso street artist napoletano, molto noto per i ritratti murali dipinti in onore a Bud Spencer, Maradona, Gigi Proietti, Armine Harutyunian (la modella di Gucci tanto criticata perché non rappresenterebbe i canoni di bellezza classici)."
   },
   {

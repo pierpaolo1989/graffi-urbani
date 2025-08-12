@@ -43,7 +43,6 @@ const cardStyle = {
     maxWidth: "450px"
 };
 
-// ✅ Contenuto delle card
 const cards = [
     {
         title: "🌱 AirLite: la pittura che purifica l’aria",
@@ -68,7 +67,19 @@ const cards = [
     {
         title: "🏙️ Arte per riqualificare",
         text: "Progetti come 'Street Art Napoli' hanno trasformato quartieri degradati in spazi vivi e colorati, coinvolgendo scuole, associazioni e cittadini."
-    }
+    },
+    {
+        title: "🏙️ Teorema delle finestre rotte",
+        text: "Progetti come 'Street Art Napoli' hanno trasformato quartieri degradati in spazi vivi e colorati, coinvolgendo scuole, associazioni e cittadini."
+    },
+    {
+        title: "🏙️ Diritti d'autore sulle opere di street art",
+        text: "Progetti come 'Street Art Napoli' hanno trasformato quartieri degradati in spazi vivi e colorati, coinvolgendo scuole, associazioni e cittadini."
+    },
+     {
+        title: "🏙️ Diritti d'autore sulle opere di street art",
+        text: "Progetti come 'Street Art Napoli' hanno trasformato quartieri degradati in spazi vivi e colorati, coinvolgendo scuole, associazioni e cittadini."
+    },
 ];
 
 export default CuriosityPage;

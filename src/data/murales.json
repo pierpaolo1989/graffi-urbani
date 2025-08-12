@@ -122,5 +122,12 @@
     "name": "Giancarlo Siani",
     "city": "Marano di Napoli, Via Arturo Labriola, 7B",
     "details": "Un omaggio al giornalista de Il Mattino ucciso in un agguato di camorra nel 1992."
+  },
+  {
+    "id": 18,
+    "coords": [14.2834497,40.8876916],
+    "name": "Nino D'Aneglo",
+    "city": "Napoli, Via Francesco Agello, 17",
+    "details": "Un omaggio all'artista napoletano, rappresentato con il volto sorridente e il famoso caschetto biondo che lo ha contraddistinto all’inizio della sua grande carriera."
   }
 ]

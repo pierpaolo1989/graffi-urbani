@@ -43,6 +43,7 @@ const Sidebar: React.FC<SidebarProps> = ({ murals, onFilter, onSelect, className
             ✕
           </button>
         )}
+       <hr className="h-px my-2 bg-4red-500 border-0 bg-red-500" />
       </div>
 
       <div className="overflow-y-auto max-h-auto">
