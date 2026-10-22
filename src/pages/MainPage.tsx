@@ -63,7 +63,7 @@ const MainPage: React.FC = () => {
   return (
     <div className="app flex flex-col h-screen overflow-hidden">
       <Navbar />
-      <div className="flex flex-1">
+      <div className="flex min-h-0 flex-1">
         <MapComponent
           murals={filteredMurals}
           sponsors={showSponsors ? sponsors as Sponsor[] : []}

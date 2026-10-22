@@ -9,7 +9,7 @@ function CuriosityPage() {
 
                 <div style={cardGridStyle}>
                     {cards.map((card, index) => (
-                        <div key={index} style={cardStyle}>
+                        <div key={index} className="card-hover-effect" style={cardStyle}>
                             <h2>{card.title}</h2>
                             <p>{card.text}</p>
                         </div>
@@ -38,7 +38,6 @@ const cardStyle = {
     backgroundColor: "#f9f9f9",
     borderRadius: "8px",
     padding: "20px",
-    boxShadow: "0 2px 8px rgba(0,0,0,0.1)",
     flex: "1 1 300px",
     maxWidth: "450px"
 };

@@ -6,14 +6,16 @@ interface Props {
 }
 
 const ArtistCard: React.FC<Props> = ({ artist }) => (
-  <div style={{
-    border: "1px solid #ccc",
-    borderRadius: "8px",
-    padding: "16px",
-    width: "300px",
-    margin: "10px",
-    boxShadow: "0 2px 8px rgba(0,0,0,0.1)"
-  }}>
+  <div
+    className="card-hover-effect"
+    style={{
+      border: "1px solid #ccc",
+      borderRadius: "8px",
+      padding: "16px",
+      width: "300px",
+      margin: "10px"
+    }}
+  >
     <img src={artist.image} alt={artist.name} style={{ width: "100%", borderRadius: "8px" }} />
     <h3 className="mt-2">{artist.name}</h3>
     <p>{artist.bio}</p>

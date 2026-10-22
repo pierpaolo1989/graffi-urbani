@@ -23,9 +23,9 @@ const Sidebar: React.FC<SidebarProps> = ({ murals, onFilter, onSelect, className
   };
 
   return (
-    <div className={`sidebar p-4 h-screen ${className}`}>
+    <div className={`sidebar flex h-full min-h-0 flex-col overflow-hidden p-4 ${className}`}>
 
-      <div className="relative mb-4">
+      <div className="relative mb-4 flex-shrink-0">
         <input
           type="text"
           placeholder="Cerca murale..."
@@ -46,7 +46,7 @@ const Sidebar: React.FC<SidebarProps> = ({ murals, onFilter, onSelect, className
        <hr className="h-px my-2 bg-4red-500 border-0 bg-red-500" />
       </div>
 
-      <div className="overflow-y-auto max-h-auto">
+      <div className="min-h-0 flex-1 overflow-y-auto">
         <ul>
           {murals.map((murale) => (
             <li

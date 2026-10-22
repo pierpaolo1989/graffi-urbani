@@ -8,6 +8,8 @@ import { Feature } from "ol";
 import { Point } from "ol/geom";
 import { Vector as VectorLayer } from "ol/layer";
 import { Vector as VectorSource } from "ol/source";
+import Zoom from "ol/control/Zoom";
+import { defaults as defaultControls } from "ol/control/defaults";
 import { Style, Icon } from "ol/style";
 import Overlay from "ol/Overlay";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -37,7 +39,18 @@ const MapComponent: React.FC<MapComponentProps> = ({ murals, sponsors, selectedM
 
   const mapRef = useRef<Map | null>(null);
   const vectorSourceRef = useRef(new VectorSource());
+  const overlayRef = useRef<Overlay | null>(null);
+  const activePopupFeatureRef = useRef<Feature | null>(null);
+  const popupContentRef = useRef<HTMLDivElement>(null);
   const [element, setElement] = useState<HTMLElement | null | undefined>(null);
+
+  const closePopup = () => {
+    overlayRef.current?.setPosition(undefined);
+    activePopupFeatureRef.current = null;
+    if (popupContentRef.current) {
+      popupContentRef.current.innerHTML = "";
+    }
+  };
 
   useEffect(() => {
     setElement(document.getElementById("popup-content"));
@@ -45,8 +58,24 @@ const MapComponent: React.FC<MapComponentProps> = ({ murals, sponsors, selectedM
 
   useEffect(() => {
     if (element) {
+      const zoomInLabel = document.createElement("span");
+      zoomInLabel.className = "map-zoom-label map-zoom-in-label";
+      zoomInLabel.textContent = "+";
+
+      const zoomOutLabel = document.createElement("span");
+      zoomOutLabel.className = "map-zoom-label map-zoom-out-label";
+      zoomOutLabel.textContent = "−";
+
       const map = new Map({
         target: "map",
+        controls: defaultControls({ zoom: false }).extend([
+          new Zoom({
+            zoomInLabel,
+            zoomOutLabel,
+            zoomInTipLabel: "Ingrandisci",
+            zoomOutTipLabel: "Riduci zoom",
+          }),
+        ]),
         layers: [
           new TileLayer({
             source: new OSM(),
@@ -75,34 +104,45 @@ const MapComponent: React.FC<MapComponentProps> = ({ murals, sponsors, selectedM
       const overlay = new Overlay({
         element: document.getElementById("popup") || undefined,
         positioning: "bottom-center",
-        stopEvent: false,
+        stopEvent: true,
       });
       map.addOverlay(overlay);
+      overlayRef.current = overlay;
 
       map.on("click", (event) => {
-        map.forEachFeatureAtPixel(event.pixel, (feature) => {
-          const details = feature.get("details");
-          if (details) {
-            const geometry = feature.getGeometry();
-            if (geometry && geometry.getType() === "Point") {
-              const coords = (geometry as Point).getCoordinates(); // Cast esplicito a Point
-              overlay.setPosition(coords);
-              const popupContent = document.getElementById("popup-content");
-              if (popupContent) {
-                popupContent.innerHTML = details;
-              } else {
-                console.error("Element with ID 'popup-content' not found.");
-              }
-            } else {
-              overlay.setPosition(undefined);
-            }
+        const clickedFeature = map.forEachFeatureAtPixel(event.pixel, (feature) =>
+          feature instanceof Feature && feature.get("details") ? feature : undefined
+        );
+
+        if (!(clickedFeature instanceof Feature)) {
+          closePopup();
+          return;
+        }
+
+        if (activePopupFeatureRef.current === clickedFeature) {
+          closePopup();
+          return;
+        }
+
+        const geometry = clickedFeature.getGeometry();
+        if (geometry instanceof Point) {
+          activePopupFeatureRef.current = clickedFeature;
+          overlay.setPosition(geometry.getCoordinates());
+          if (popupContentRef.current) {
+            popupContentRef.current.innerHTML = clickedFeature.get("details");
           }
-        });
+        } else {
+          closePopup();
+        }
       });
 
       mapRef.current = map;
 
-      return () => map.setTarget(undefined);
+      return () => {
+        map.setTarget(undefined);
+        overlayRef.current = null;
+        activePopupFeatureRef.current = null;
+      };
     }
   }, [element]);
 
@@ -184,52 +224,35 @@ const MapComponent: React.FC<MapComponentProps> = ({ murals, sponsors, selectedM
   };
 
   return (
-    <div style={{ position: "relative", width: "100%", height: "100%" }}>
+    <div className="map-container">
       <div
         id="popup"
-        className="absolute bg-white border rounded-lg shadow-md p-2 w-48"
+        className="absolute bg-white border rounded-lg shadow-md p-2 pr-8 w-48"
       >
-        <div id="popup-content" />
+        <button
+          type="button"
+          onClick={closePopup}
+          aria-label="Chiudi popup"
+          className="absolute right-2 top-2 flex h-5 w-5 items-center justify-center rounded text-gray-500 hover:bg-gray-100 hover:text-gray-900"
+        >
+          ×
+        </button>
+        <div id="popup-content" ref={popupContentRef} />
       </div>
       <div id="map" style={{ width: "100%", height: "100vh" }} />
       <button
         onClick={handleFindNearestClick}
-        style={{
-          position: "absolute",
-          top: "80px",
-          left: "7px",
-          width: "40px",
-          height: "40px",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          background: "white",
-          border: "1px solid #ccc",
-          borderRadius: "4px",
-          cursor: "pointer",
-        }}
+        className="map-action-button map-location-button"
+        aria-label="Trova il murale più vicino"
       >
-        <FontAwesomeIcon icon={faLocationDot} style={{ "color": "#666666" }} />
+        <FontAwesomeIcon icon={faLocationDot} />
       </button>
       <button
         onClick={handleCenterNaples}
-        className="absolute px-3 py-2 shadow hover:bg-gray-800"
-        style={{
-          position: "absolute",
-          top: "130px",
-          left: "7px",
-          width: "40px",
-          height: "40px",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          background: "white",
-          border: "1px solid #ccc",
-          borderRadius: "4px",
-          cursor: "pointer",
-        }}
+        className="map-action-button map-center-button"
+        aria-label="Centra la mappa su Napoli"
       >
-        <FontAwesomeIcon icon={faAlignCenter} style={{ "color": "#666666" }} />
+        <FontAwesomeIcon icon={faAlignCenter} />
       </button>
     </div>
   );
