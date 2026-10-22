@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/graffi-urbani/static/css/main.e8aa050e.css",
-    "main.js": "/graffi-urbani/static/js/main.b603432a.js",
+    "main.css": "/graffi-urbani/static/css/main.fc7c5188.css",
+    "main.js": "/graffi-urbani/static/js/main.6e361b4e.js",
     "static/js/453.4b0f5b7d.chunk.js": "/graffi-urbani/static/js/453.4b0f5b7d.chunk.js",
     "index.html": "/graffi-urbani/index.html",
-    "main.e8aa050e.css.map": "/graffi-urbani/static/css/main.e8aa050e.css.map",
-    "main.b603432a.js.map": "/graffi-urbani/static/js/main.b603432a.js.map",
+    "main.fc7c5188.css.map": "/graffi-urbani/static/css/main.fc7c5188.css.map",
+    "main.6e361b4e.js.map": "/graffi-urbani/static/js/main.6e361b4e.js.map",
     "453.4b0f5b7d.chunk.js.map": "/graffi-urbani/static/js/453.4b0f5b7d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e8aa050e.css",
-    "static/js/main.b603432a.js"
+    "static/css/main.fc7c5188.css",
+    "static/js/main.6e361b4e.js"
   ]
 }
