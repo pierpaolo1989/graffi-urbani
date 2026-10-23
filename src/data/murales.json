@@ -3,21 +3,16 @@
     "id": 1,
     "artist": "Jorit",
     "name": "Murale di Maradona",
-    "coords": [14.2475, 40.8522],
-    "details": "Un omaggio al Pibe de Oro."
-  },
-  {
-    "id": 2,
-    "name": "Murale della Pace",
-    "coords": [14.262, 40.8493],
+    "city": "Napoli, San Giovanni a Teduccio, Via Taverna del Ferro",
+    "coords": [14.3065627, 40.8351537],
     "details": "Un omaggio al Pibe de Oro."
   },
   {
     "id": 3,
-    "artist": "Francisco Bosolotti",
-    "city": "Napoli, via Sanità",
-    "name": "La speranza nascosta",
-    "coords": [14.2358, 40.8556],
+    "artist": "Francisco Bosoletti",
+    "city": "Napoli, Rione Sanità, Piazza Sanità",
+    "name": "Resis-Ti amo",
+    "coords": [14.2494353, 40.8595021],
     "details": "Su una parete della Facciata della Basilica di S. Maria della Sanità, quella all’ombra del maestoso ponte della Sanità, prendono corpo due figure: un uomo e una donna si abbracciano e si sostengono come in un passo di danza."
   },
   {
@@ -30,15 +25,11 @@
   },
   {
     "id": 5,
+    "artist": "Jorit",
+    "city": "Napoli, Forcella",
     "name": "San Gennaro",
     "coords": [14.2625312, 40.850771],
     "details": "Un omaggio al Santo Patrono della città di Napoli, in pieno centro storico."
-  },
-  {
-    "id": 6,
-    "name": "Zilda Sanità",
-    "coords": [14.2601802, 40.8520573],
-    "details": "Un omaggio al Pibe de Oro."
   },
   {
     "id": 7,
@@ -53,7 +44,7 @@
     "name": "Murale di Troisi",
     "artist": "Jorit",
     "city": "San Giorgio a Cremano, Via Roberto Galdieri",
-    "coords": [14.3399685, 40.839877],
+    "coords": [14.3439178, 40.8399036],
     "details": "Un omaggio ad uno dei più grandi attori e comici italiani."
   },
   {
@@ -61,13 +52,14 @@
     "name": "Murale di Fidel Castro",
     "city": "Napoli, via Mezzocannone",
     "artist": "Mono Gonzalez e Tono Cruz",
-    "coords": [14.2559494, 40.846871],
+    "coords": [14.2559829, 40.8467939],
     "details": "Il murales è dedicato all'ex leader cubano ed è stato realizzato sulla facciata del centro sociale Mezzocannone Occupato."
   },
   {
     "id": 10,
     "name": "Parco dei Murales",
-    "coords": [14.338304, 40.8605176],
+    "city": "Napoli, Ponticelli, Viale Aldo Merola",
+    "coords": [14.3406599, 40.8585388],
     "details": "Il Parco dei Murales è un programma di creatività urbana, tra riqualificazione artistica e rigenerazione sociale, condotto con la partecipazione della comunità residente."
   },
   {
@@ -75,59 +67,35 @@
     "name": "Sibilla Cumana",
     "artist": "Jorit",
     "city": "Bacoli, Via Gaetano De Rosa",
-    "coords": [14.0789871, 40.7966558],
+    "coords": [14.0792107, 40.7986355],
     "details": "Il murale ritrae il volto giovane della sibilla ed il suo riflesso nelle acque della Piscina Mirabilis, un’antica cisterna romana che si trova proprio nei pressi dell’opera di Jorit."
   },
   {
-    "id": 12,
-    "name": "Murale di Giancarlo Siani",
-    "coords": [14.2370208, 40.8505644],
-    "details": "Un omaggio al giornalista de Il Mattino ucciso in un agguato di camorra nel 1992."
-  },
-  {
-    "id": 13,
-    "artist": "Leticia Mandragora",
-    "city": "Gragnano, Via Quarantola, 170",
-    "name": "Murale di Sofia Loren",
-    "coords": [14.2530807, 40.6944349],
-    "details": "L'opera riporta una sua celebre frase sugli spaghetti, la pasta per eccellenza. Scritta non messa a caso visto che Gragnano è famosa per i suoi pastifici. Carina anche l'idea degli orecchini a forma di pasta."
-  },
-  {
-    "id": 14,
-    "name": "La madre",
-    "artist": "Jorit",
-    "details": "Ritratto di una madre africana, simbolo di forza e dignità.",
-    "city": "Quarto, Napoli",
-    "coords": [14.1456, 40.8732]
-  },
-  {
-    "id": 15,
-    "name": "La bambina con il palloncino",
-    "artist": "Sky in the Box",
-    "details": "Opera delicata che raffigura una bambina con un palloncino rosso a forma di cuore.",
-    "city": "Vomero, Napoli",
-    "coords": [14.2333, 40.8429]
-  },
-  {
     "id": 16,
-    "city": "Scampia, Piazza Cardinale Sisto Riario Sforza",
+    "city": "Napoli, Piscinola-Scampia",
     "artist": "Jorit",
     "name": "Pierpaolo Pasolini",
-    "coords": [14.2370723, 40.8944218],
+    "coords": [14.2411102, 40.8969858],
     "details": "Murale dedicato al poeta, scrittore e filosofo romano.  Dipinto sulla facciata di un palazzo all’uscita della stazione della metropolitana di Piscinola-Scampia, linea 1."
   },
   {
     "id": 17,
-    "coords": [14.1786442,40.8981435],
-    "name": "Giancarlo Siani",
-    "city": "Marano di Napoli, Via Arturo Labriola, 7B",
-    "details": "Un omaggio al giornalista de Il Mattino ucciso in un agguato di camorra nel 1992."
+    "city": "Napoli, Quartieri Spagnoli",
+    "artist": "Cyop & Kaf",
+    "name": "Cyop & Kaf",
+    "coords": [14.247810, 40.841232],
+    "details": "Varie opere realizzate tra le vie dei Quartieri Spagnoli."
   },
   {
     "id": 18,
-    "coords": [14.2834497,40.8876916],
-    "name": "Nino D'Aneglo",
-    "city": "Napoli, Via Francesco Agello, 17",
-    "details": "Un omaggio all'artista napoletano, rappresentato con il volto sorridente e il famoso caschetto biondo che lo ha contraddistinto all’inizio della sua grande carriera."
+    "city": "Napoli, Quartieri Spagnoli",
+    "artist": "Cyop & Kaf",
+    "name": "Partenope, Madre dei quartieri di Napoli",
+    "coords": [14.230073, 40.853261],
+    "details": "Sirena di oltre 24 metri in blu cobalto con spighe di grano e 30 stemmi dei quartieri sulle squame; opera di Voiello con il collettivo VIENMNSUONNO1926."
   }
+
+
+
+
 ]
